@@ -1,0 +1,25 @@
+{
+  "name": "Akhil & Bhavina — Wedding Invitation",
+  "short_name": "Akhil & Bhavina",
+  "description": "Join Akhil and Bhavina in celebrating their wedding on 24 January 2027 in Raipur.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FCF8F2",
+  "theme_color": "#6B1E28",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

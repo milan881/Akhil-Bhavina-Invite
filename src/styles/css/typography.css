@@ -1,0 +1,55 @@
+@layer base {
+  body {
+    @apply bg-background text-foreground font-body text-body antialiased;
+  }
+
+  h1 {
+    @apply font-heading text-heading-1 text-primary;
+  }
+
+  h2 {
+    @apply font-heading text-heading-2 text-primary;
+  }
+
+  h3 {
+    @apply font-heading text-heading-3 text-primary;
+  }
+
+  h4 {
+    @apply font-heading text-heading-4 text-primary;
+  }
+
+  p {
+    @apply text-body text-foreground;
+  }
+}
+
+@layer components {
+  .type-display-xl {
+    @apply font-heading text-display-xl text-primary;
+  }
+
+  .type-display-lg {
+    @apply font-heading text-display-lg text-primary;
+  }
+
+  .type-script-lg {
+    @apply font-script text-script-lg text-gold;
+  }
+
+  .type-script {
+    @apply font-script text-script text-gold;
+  }
+
+  .type-overline {
+    @apply font-body text-caption uppercase tracking-[0.3em] text-muted-foreground;
+  }
+
+  .type-body-lg {
+    @apply font-body text-body-lg text-foreground;
+  }
+
+  .type-body-muted {
+    @apply font-body text-body-lg text-muted-foreground;
+  }
+}

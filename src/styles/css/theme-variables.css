@@ -1,0 +1,51 @@
+/**
+ * CSS custom properties — runtime source of truth.
+ * Brand vars (--brand-*) are referenced by Tailwind @theme and shadcn semantics.
+ */
+
+:root {
+  /* Brand palette */
+  --brand-background: #fcf8f2;
+  --brand-gold: #c9a227;
+  --brand-gold-dark: #9f7a12;
+  --brand-maroon: #6b1e28;
+  --brand-text: #2f2f2f;
+  --brand-white: #ffffff;
+
+  /* shadcn semantic tokens */
+  --background: var(--brand-background);
+  --foreground: var(--brand-text);
+  --card: var(--brand-white);
+  --card-foreground: var(--brand-text);
+  --popover: var(--brand-white);
+  --popover-foreground: var(--brand-text);
+  --primary: var(--brand-maroon);
+  --primary-foreground: var(--brand-white);
+  --secondary: #f5edd8;
+  --secondary-foreground: var(--brand-gold-dark);
+  --muted: #f3ede4;
+  --muted-foreground: #6b6360;
+  --accent: var(--brand-gold);
+  --accent-foreground: var(--brand-text);
+  --destructive: #991b1b;
+  --border: #e8dfd0;
+  --input: #e8dfd0;
+  --ring: var(--brand-gold);
+
+  /* Radius base (shadcn) */
+  --radius: 0.5rem;
+
+  /* Motion — durations */
+  --duration-instant: 100ms;
+  --duration-fast: 200ms;
+  --duration-normal: 400ms;
+  --duration-slow: 600ms;
+  --duration-slower: 800ms;
+  --duration-reveal: 1200ms;
+
+  /* Motion — easing curves */
+  --ease-default: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-elegant: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-entrance: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-exit: cubic-bezier(0.4, 0, 1, 1);
+}

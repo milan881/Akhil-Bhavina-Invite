@@ -1,0 +1,103 @@
+@utility text-gradient-gold {
+  background: linear-gradient(
+    135deg,
+    var(--brand-gold),
+    var(--brand-gold-dark)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility divider-gold {
+  height: 1px;
+  width: 6rem;
+  margin-inline: auto;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--brand-gold) 20%,
+    var(--brand-gold) 80%,
+    transparent
+  );
+}
+
+@utility max-w-container {
+  max-width: var(--spacing-container);
+}
+
+@utility px-gutter {
+  padding-inline: var(--spacing-gutter);
+}
+
+@utility py-section {
+  padding-block: var(--spacing-section);
+}
+
+@utility py-section-sm {
+  padding-block: var(--spacing-section-sm);
+}
+
+@utility transition-default {
+  transition-property: color, background-color, border-color, opacity, box-shadow;
+  transition-duration: var(--duration-normal);
+  transition-timing-function: var(--ease-elegant);
+}
+
+@utility transition-colors-brand {
+  transition-property: color, background-color, border-color;
+  transition-duration: var(--duration-fast);
+  transition-timing-function: var(--ease-default);
+}
+
+@utility transition-opacity-brand {
+  transition-property: opacity;
+  transition-duration: var(--duration-normal);
+  transition-timing-function: var(--ease-elegant);
+}
+
+@utility transition-transform-brand {
+  transition-property: transform;
+  transition-duration: var(--duration-slow);
+  transition-timing-function: var(--ease-elegant);
+}
+
+@utility transition-elegant {
+  transition-property: color, background-color, border-color, opacity, transform,
+    box-shadow;
+  transition-duration: var(--duration-slow);
+  transition-timing-function: var(--ease-elegant);
+}
+
+@utility transition-reveal {
+  transition-property: opacity, transform;
+  transition-duration: var(--duration-reveal);
+  transition-timing-function: var(--ease-entrance);
+}
+
+@keyframes monogram-shimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+@utility monogram-shimmer {
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    rgba(201, 162, 39, 0.35) 50%,
+    transparent 65%
+  );
+  background-size: 200% 100%;
+  animation: monogram-shimmer 3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .monogram-shimmer {
+    animation: none;
+    background: rgba(201, 162, 39, 0.08);
+  }
+}
